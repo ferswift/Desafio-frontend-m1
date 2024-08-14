@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color-1: #5fb4a2;
+  --primary-color-2: #203a4c;
+  --primary-color-3: #33323d;
+  --secundary-color-1: #fafafa;
+  --secundary-color-2: ##eaeaeb;
+  --font-family-public-sans: "Public Sans", sans-serif;
+  --font-family-ibarra-real: "Ibarra Real Nova", serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: 0 auto;
+  padding: 50px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-header {
+  width: 60px;
+  height: 32px;
+}
+
+.nav-home {
+  color: var(--primary-color-1);
+}
+
+.nav-header {
+  display: flex;
+  gap: 20px;
+
+  font-family: var(--font-family-public-sans);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.1px;
+  letter-spacing: 2px;
+}
+
+main {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-end;
+
+  height: 80vh;
+  max-height: 800px;
+
+  background-image: url(img/Bitmap.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-content-about {
+  position: relative;
+
+  width: 445px;
+  height: 357px;
+
+  padding: 56px 28px;
+
+  background-color: var(--secundary-color-1);
+
+  .main-content-about-title {
+    color: #33323d;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Ibarra Real Nova";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.446px;
+  }
+
+  .main-content-link {
+    all: unset;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary-color-2);
+    background-image: url("img/button.svg");
+    background-repeat: no-repeat;
+    color: var(--secundary-color-1);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 200px;
+    max-width: 200px;
+    height: 48px;
+
+    font-family: var(--font-family-public-sans);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .main-content-link:hover {
+    background-image: url("img/button-hover.svg");
+
+    background-color: var(--primary-color-1);
+  }
+
+  .main-content-link-p {
+    margin-left: 70px;
+  }
+}
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: var(--primary-color-3);
+
+  height: 80px;
+
+  color: white;
+}
+
+.container-footer {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: 0 auto;
+} */
